@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 void inputData (float berat,float tinggi){
@@ -9,11 +10,11 @@ void inputData (float berat,float tinggi){
 }
 
 float hitungBMI(float berat,float tinggi,float BMI){
-    return berat/(tinggi * tinggi);
+    return berat/(tinggi*tinggi);
 }
 
 string Status_BMI(float BMI){
-    if (BMI < 18,5)
+    if (BMI < 18.5)
         return "berat badan kurang";
     else if(BMI < 25)
         return "berat badan normal";
