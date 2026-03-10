@@ -1,15 +1,15 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-void inputData (float berat,float tinggi){
+void inputData (float &berat,float &tinggi){
     cout<< "masukan berat badan = ";
     cin>> berat;
     cout<< "masukan tinggi badan = ";
     cin>> tinggi;
 }
 
-float hitungBMI(float berat,float tinggi,float BMI){
+float hitungBMI(float berat,float tinggi){
     return berat/(tinggi*tinggi);
 }
 
@@ -29,14 +29,14 @@ int main(){
     float berat,tinggi,BMI;
     
     cout << "selamat datang mahasisawa kelas A 2025" <<endl;
-
+70
     inputData(berat,tinggi);
 
-    BMI = hitungBMI(berat, tinggi,BMI);
+    BMI = hitungBMI(berat,tinggi);
 
     cout <<"\n--hasil--"<<endl;
     
-   cout << "BMI anda = "<<Status_BMI<<" ,status = "<<Status_BMI(BMI)<<endl;
+   cout << "BMI anda = "<<BMI<<" ,status = "<<Status_BMI(BMI)<<endl;
 
    return 0;
 
